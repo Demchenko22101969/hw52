@@ -8,17 +8,18 @@
   </head>
   <body></body>
   <script>
-    let x=prompt("Enter first number");
-    let y=prompt("Enter second number");
-
-    
-    if(x==y){
-      alert("x is equal to y");
-    } else if(x<y){
-      alert("x is less than y");
-    } else if (x>y){
-      alert("x is more than y");
-    }else{alert("x and y incomparable quantities");};
-
+    let x = prompt("Enter first number");
+    let y = prompt("Enter second number");
+    if (typeof x === number && typeof y === number) {
+      if (x == y) {
+        alert(x + " is equal to " + y);
+      } else if (x < y) {
+        alert(x + " is less than " + y);
+      } else if (x > y) {
+        alert(x + " is more than " + y);
+      }
+    } else {
+      alert(x + " and " + y + " incomparable quantities ");
+    }
   </script>
 </html>
